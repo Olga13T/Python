@@ -3,7 +3,6 @@
 #     *Пример:*
 
 # - Для N = 5: 1, -3, 9, -27, 81
-# def searchNumber(1
 
 # ****
 # def func(x):
@@ -13,16 +12,15 @@
 #         s = s*(-3)
 #         print(s, end=' ')
 
-
-# n = int(input('--> '))
+# n = int(input('-->  '))
 # func(n)
 # ***
 # ****
-# def Proiz(a, n)
-# while n > 0:
-# # a[1]=1
-# # a[2]=a[1]*(-3)
-# a[n]=a[n-1]*(-3)
+# def Proiz(a, n):
+#     while n > 0:
+    # a[1]=1
+    # a[2]=a[1]*(-3)
+#     a[n]=a[n-1]*(-3)
 
 # Proiz(1,5)
 # def returnSequence(num):
@@ -51,11 +49,10 @@
 
 # n = int(input('--> '))
 # print_numbers(n)
-
+#  особенность в питоне:
 # def print_numbers(x=[]):
 #     x.append(5)
 #     print(x)
-#  особенность в питоне:
 # a = []
 # print_numbers(x=a)
 # print_numbers(x=a)
@@ -66,15 +63,15 @@
 # Напишите программу, в которой пользователь будет задавать две строки,
 # а программа - определять количество вхождений одной строки в другой.
 
-st1 = 'привет, мир, т, привет!'
-st2 = ','
-def str(st1, st2):
-    t = 0
-    for i in range(len(st1) - len(st2)):
-        if (st1[i : i + len(st2)] == st2):
-            t += 1
-    return t
-print(str(st1, st2))
+# st1 = 'привет, мир, т, привет!'
+# st2 = ','
+# def str(st1, st2):
+#     t = 0
+#     for i in range(len(st1) - len(st2)):
+#         if (st1[i : i + len(st2)] == st2):
+#             t += 1
+#     return t
+# print(str(st1, st2))
 
 
 # def find_line(string:str, under_strind:str):
@@ -85,17 +82,15 @@ print(str(st1, st2))
 # find_line(user_string, user_understring)
 
 
-
-
-symbol = 'so'
-base_string = 'some pernal'
-position = 0
-qty = 0
-while(True):
-    position = base_string.find(symbol, position)
-    if position == -1:
-        break
-    else:
-        position += 1    # как вариант len(symbol)
-        qty += 1
-print(qty)
+# symbol = 'so'
+# base_string = 'some pernal'
+# position = 0
+# qty = 0
+# while(True):
+#     position = base_string.find(symbol, position)
+#     if position == -1:
+#         break
+#     else:
+#         position += 1    # как вариант len(symbol)
+#         qty += 1
+# print(qty)
