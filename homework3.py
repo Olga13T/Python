@@ -3,12 +3,11 @@
 # Пример:
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
-my_set = input('Enter your list :').split()
 s = input('enter list:  ').split()
 notEven = []
 for i in range(len(s)):
     s[i] = int(s[i])
-    if not i % 2 == 0:
+    if not i % 2:
         notEven.append(s[i])
 print(sum(notEven))
 
