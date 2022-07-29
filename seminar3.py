@@ -46,7 +46,7 @@
 
 # Реализуйте алгоритм задания случайных чисел без использования встроенного генератора псевдослучайных чисел.
 
-import time
+# import time
 
 # a = str(time.time())
 # b=a[-1]+a[-2]
@@ -54,8 +54,8 @@ import time
 # print(b)
 
 
-someList = [(((time.time())%100)/3) for i in range(7)]
-print(someList)
+# someList = [(((time.time())%100)/3) for i in range(7)]
+# print(someList)
 
 # def find_num(x):
 #     a = str(time.time())
