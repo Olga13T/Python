@@ -1,49 +1,32 @@
+# 1. Напишите программу, которая принимает на вход цифру,
+# обозначающую день недели, и проверяет, является ли этот день выходным.
+# Пример:
+# - 6 -> да
+# - 7 -> да
+# # - 1 -> нет
 
-# # whithout subziro numbers
-# number1 = 1
-# number2 = 1
-
-# n = int(input('Enter your number  '))
-
-# print(number1, number2, end=' ')
-# while n > 2:
-#     number1, number2 = number2, number1 + number2
-#     print(number2, end=' ')
-#     n -= 1
+# a = int(input('Введите цифру, обозначающую день недели (от 1 до 7):  '))
 
 
-#     def summa(a):
-#     if a == 0:
-#         return 0
-#     elif a == 1:
-#         return 1
+# # def cho(x): return 'no' if 0 < x < 6 else ('yes' if 5 < x < 8 else 'Введенное число не соответствует дню недели')
+
+# c = lambda x: 'no' if 0 < x < 6 else ('yes' if 5 < x < 8 else 'Введенное число не соответствует дню недели')
+# print(c(a))
+# check_day = print(dict.get(lambda d, : a))
+# def choice(x):
+#     if 0 < x < 6:
+#         return 'нет'
+#     elif 5 < x < 8:
+#         return 'да'
 #     else:
-#         return a + summa(a-1)
+#         return ''
+# print(choice(a))
+import random
 
-# rez = summa(10)
-# print(rez)
+someList = [random.randint(-20, 30) for i in range(10)]
+print(someList)
 
+s_even = [i for i in someList if i % 2 == 0]
+n_even = [i for i in someList if i % 2 != 0]
 
-# # fibonacci +
-# def fibon(n):
-#     if n == 0:
-#         return 0
-#     elif n == 1:
-#         return 1
-#     else:
-#         return fibon(n-1) + fibon(n-2)
-
-# print(fibon(-1))
-
-
-
-# Zadaca s pi
-import math
-
-n = float(input('enter your number accuracy   '))
-i = 0
-while n != 1:
-    n = n * 10
-    i += 1
-
-print(round(math.pi, i))
+print(s_even+n_even)
