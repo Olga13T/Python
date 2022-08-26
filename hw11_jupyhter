@@ -1,0 +1,42 @@
+SymPy
+f(x) = -12x^4*sin(cos(x)) - 18x^3+5x^2 + 10x - 30
+Определить корни
+Найти интервалы, на которых функция возрастает
+Найти интервалы, на которых функция убывает
+Построить график
+Вычислить вершину
+Определить промежутки, на котором f > 0
+Определить промежутки, на котором f < 0
+
+import sympy as smp
+import numpy as np
+import matplotlib.pyplot as plt
+
+from sympy.abc import x
+from sympy import sin, cos
+x = smp.symbols('x')
+
+print(solve(-12*x**4*sin(cos(x)) - 18*x**3+5*x**2 + 10*x - 30,x))
+# корни не считает(
+
+print(series((2*(6*x*4**sin(x)*cos(cos(x) - 24*x**3*sin*(cos(x)) - 27*x**2 + 5*x + 5))
+# при разложении на многочлен тоже...
+
+import matplotlib.pyplot as plt
+
+x = list(range(-100,100))
+y = [5-12*i**4*sin(cos(i)) - 18*i**3+5*i**2 + 10*i - 30 for i in x]
+
+plt.title("    Зависимость y = -12*x**4*sin(cos(x)) - 18*x**3+5*x**2 + 10*x - 30")
+plt.axes(facecolor='oldlace')
+plt.xlabel("x", fontsize = 14)
+plt.ylabel("y", fontsize = 14)
+plt.grid(which="major", linewidth=1.2)  #отображение сетки
+plt.grid(which="minor", linestyle="--", color="blue", linewidth=0.5)
+plt.grid(b=True, axis='x')
+plt.plot(x,y,"r")
+
+plt.show()
+
+# График строит. 
+# По графику видно, что корней много по обе стороны от центра
