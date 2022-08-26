@@ -6,15 +6,15 @@ def main():
 
 
 
-# video_url = input()
-# 'https://www.youtube.com/watch?v=xVKGXgHDMvQ'
-# def download_video(url = ''):
-#     try:
-#         response = requests.get(url=url)
-#         with open('new_video.mp4','wb') as video:
-#             video.write(response.content)
-#     except Exception as ex:
-#         return 'Check the url-address please'
+video_url = input()
+'https://www.youtube.com/watch?v=xVKGXgHDMvQ'
+def download_video(url = ''):
+    try:
+        response = requests.get(url=url)
+        with open('new_video.mp4','wb') as video:
+            video.write(response.content)
+    except Exception as ex:
+        return 'Check the url-address please'
 
 window = tk.Tk()
 
