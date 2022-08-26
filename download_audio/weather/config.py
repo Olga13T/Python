@@ -1,1 +1,1 @@
-open_weather_token = "b08509f735f187f507952eedb79bd312" 
+open_weather_token = "b07509f455f187f507952eedb79bd312" 
